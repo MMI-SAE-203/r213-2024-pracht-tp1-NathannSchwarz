@@ -1,5 +1,9 @@
 <script setup lang="ts">
-  const maVar = true
+
+import { ref } from 'vue';
+
+  const maVar = ref(true)
+
 </script>
 
 <template>
