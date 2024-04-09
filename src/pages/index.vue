@@ -7,5 +7,7 @@ import { ref } from 'vue';
 </script>
 
 <template>
-  <h1 v-show="maVar" class="text-2xl">Bonjour monde !</h1>
+  <button @click="maVar=!maVar">le crane de pratch</button>
+
+  <h1 v-show="maVar" class="text-2xl">BIG CALVAS</h1>
 </template>
