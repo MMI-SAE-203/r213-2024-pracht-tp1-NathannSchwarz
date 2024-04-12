@@ -6,6 +6,11 @@ onErrorCaptured((err, instance, info) => {
   console.error('erreur : ', err, '\ninfo : ', info, '\ncomposant : ', instance)
   return true
 })
+
+import { ref } from 'vue'
+
+const menuIsOpen = ref(true)
+
 </script>
 
 <template>
@@ -31,8 +36,8 @@ onErrorCaptured((err, instance, info) => {
   >
     menu
   </button>
-  
-  <nav id="mainNav">
+
+  <nav v-show="menuIsOpen" id="mainNav">
     <ul>
       <li><a href="#">item 1</a></li>
       <li><a href="#">item 2</a></li>
