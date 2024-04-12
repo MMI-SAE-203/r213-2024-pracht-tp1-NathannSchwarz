@@ -23,4 +23,20 @@ onErrorCaptured((err, instance, info) => {
       <component :is="Component" />
     </Suspense>
   </RouterView>
+
+  <button
+    aria-controls="mainNav"
+    aria-expanded="true"
+    class="rounded-full border-2 border-red-600 bg-red-300 px-2"
+  >
+    menu
+  </button>
+  
+  <nav id="mainNav">
+    <ul>
+      <li><a href="#">item 1</a></li>
+      <li><a href="#">item 2</a></li>
+      <li><a href="#">item 3</a></li>
+    </ul>
+  </nav>
 </template>
